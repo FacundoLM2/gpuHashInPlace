@@ -12,8 +12,6 @@ import build.cudaProcesses as cudaProcesses
 
 ###############################################
 
-##
-
 print("\npython: loading markersLUT")
 
 with open("marker_to_propertyLUT.json","r") as f:
@@ -25,8 +23,6 @@ with TiffFile("V_uint16.tiff") as tif:
     V_input=tif.asarray().astype(np.uint32)
 
 sliceForPlot=400
-
-# V_input=V_input[:sliceForPlot+1]
 
 del inputLUT["-1"]
 
